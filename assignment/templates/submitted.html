@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Full Name</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Submitted Full Name</h1>
+    <table>
+        <tr>
+            <th>Full Name</th>
+        </tr>
+        <tr>
+            <td>{{ full_name }}</td>
+        </tr>
+    </table>
+    <a href="{{ url_for('index') }}">Go Back</a>
+</body>
+</html>

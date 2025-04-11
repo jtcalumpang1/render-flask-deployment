@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        # Get form data
+
         first_name = request.form.get("first_name")
         middle_name = request.form.get("middle_name")
         last_name = request.form.get("last_name")
